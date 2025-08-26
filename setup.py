@@ -18,4 +18,5 @@ setup(name='copilot_auth',
       packages=['copilot_auth'],
       include_package_data=True,
       zip_safe=False,
+      install_requires=['requests']
       )
