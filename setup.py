@@ -15,7 +15,7 @@ setup(name='copilot_auth',
       author='Bhanuchander Udhayakumar',
       author_email='bhanuchander210@gmail.com',
       license='MIT',
-      packages=['copilot-auth'],
+      packages=['copilot_auth'],
       include_package_data=True,
       zip_safe=False,
       )
