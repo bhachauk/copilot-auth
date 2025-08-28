@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='copilot_auth',
-      version='0.1.1',
+      version='0.1.2',
       long_description=long_description,
       long_description_content_type='text/markdown',
       description='Copilot authentication library to get GitHub and Copilot tokens',
