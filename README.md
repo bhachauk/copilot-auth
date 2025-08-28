@@ -37,6 +37,9 @@ def token_handler(token):
     print(token)
 
 # Fetch the github access token
-ca.authenticate_github_token([token_handler])
+ca.authenticate_github_access_token([token_handler])
+
+# Fetch the copilot github token using the github access token
+ca.authenticate_copilot_token([token_handler])
 
 ```
