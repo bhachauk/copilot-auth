@@ -103,8 +103,8 @@ def authenticate_github_access_token(handlers:list[TokenHandler]):
 
 
 # fetch copilot token if it is not present in the environment
-def authenticate_copilot_token(handlers:list[TokenHandler]):
-    if os.getenv("GITHUB_TOKEN"):
+def authenticate_copilot_token(handlers:list[TokenHandler], force_update=False):
+    if not force_update and os.getenv("GITHUB_TOKEN"):
         warnings.warn("GITHUB_TOKEN is already set in the environment. Skipping authentication.")
         return
     access_token = os.getenv("GITHUB_ACCESS_TOKEN")
