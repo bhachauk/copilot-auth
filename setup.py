@@ -7,10 +7,10 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='copilot_auth',
-      version='0.1.0',
+      version='0.1.1',
       long_description=long_description,
       long_description_content_type='text/markdown',
-      description='A simple patch antenna design library',
+      description='Copilot authentication library to get GitHub and Copilot tokens',
       url='https://github.com/bhachauk/copilot-auth.git',
       author='Bhanuchander Udhayakumar',
       author_email='bhanuchander210@gmail.com',
